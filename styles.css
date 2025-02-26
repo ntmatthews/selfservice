@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.container {
+    padding: 4rem 2rem;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1s ease-out;
+    text-transform: capitalize;
+    color: #1a365d;
+    letter-spacing: -1px;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: #3182ce;
+    border-radius: 2px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    animation: fadeInUp 1s ease-out 0.5s both;
+    color: #4a5568;
+    font-weight: 300;
+    max-width: 600px;
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+    margin-top: 3rem;
+    opacity: 0.9;
+    animation: fadeIn 1s ease-out 0.8s both;
+    color: #2d3748;
+    text-align: right;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .content {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+
+    h1::after {
+        width: 60px;
+        height: 3px;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .signature {
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+}
+
+.countdown {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .countdown-item {
+        min-width: 80px;
+        padding: 1rem;
+    }
+
+    .subscribe input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.copyright {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.legal {
+    font-size: 0.9rem;
+    color: #4a5568;
+    opacity: 0.8;
+}
